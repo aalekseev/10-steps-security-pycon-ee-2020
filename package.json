@@ -1,0 +1,32 @@
+{
+  "name": "10-steps-security-pycon-ee-2020",
+  "version": "1.0.0",
+  "description": "Slides for Anton talk on Pycon Estonia 2020",
+  "private": true,
+  "scripts": {
+    "start": "fusuma start",
+    "build": "fusuma build",
+    "pdf": "fusuma pdf",
+    "live": "fusuma live -w '@nodejs'",
+    "deploy": "fusuma deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalekseev/10-steps-security-pycon-ee-2020.git"
+  },
+  "keywords": [
+    "fusuma",
+    "slides",
+    "mdx",
+    "pycon"
+  ],
+  "author": "Anton Alekseev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalekseev/10-steps-security-pycon-ee-2020/issues"
+  },
+  "homepage": "https://github.com/aalekseev/10-steps-security-pycon-ee-2020#readme",
+  "devDependencies": {
+    "fusuma": "^1.16.0"
+  }
+}

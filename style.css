@@ -1,0 +1,116 @@
+:root {
+    --main-color: rgb(239, 96, 54);
+    --white-color: #f5f5f5;
+    --black-color: rgb(56, 66, 84);
+    --gray-color: rgb(139, 151, 166);
+    --color: #7bb7fa;
+}
+
+body {
+    /* common background color */
+    background: var(--white-color);
+
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+header, h2 {
+    color: var(--main-color);
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-size: 4.8rem;
+}
+
+a {
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+code {
+    font-family: monospace; 
+}
+
+.current {
+    max-width: 1200px;
+}
+
+.current.title {
+    max-width: 100%;
+}
+
+.title {
+    background: var(--black-color);
+    color: var(--main-color);
+}
+
+.flex-content.about-me {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current.ten-steps {
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.ten-steps ol {
+    border: 1px solid var(--main-color);
+    list-style: none;
+    counter-reset: ten-steps;
+}
+
+.ten-steps h2 {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    margin-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ten-steps ol li {
+    margin: 0;
+    padding: 10px 5px;
+    counter-increment: ten-steps;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.ten-steps ol li:not(:last-child) {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.ten-steps ol li.active {
+    font-weight: 600;
+}
+
+.ten-steps ol li.active:before {
+    background-color: var(--main-color);
+}
+
+.ten-steps ol li:before {
+    content: counter(ten-steps);
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    width: 35px;
+    height: 35px;
+    display: grid;
+    border-radius: 50%;
+    place-items: center;
+}
+
+.large-picture {
+    height: 150%;
+    width: 150%;
+}

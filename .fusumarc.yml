@@ -1,0 +1,28 @@
+meta:
+  title: 10 Steps For More Secure Web Applications
+  thumbnail:
+  description: A talk for Pycon Estonia 2020 about security in web applications
+  sns:
+    - twitter
+slide:
+  loop: true
+  sidebar: true
+  targetBlank: true
+  showIndex: true
+  isVertical: false
+  code:
+    languages:
+      - sql
+      - python
+      - javascript
+    plugins:
+      - line-numbers
+    theme: default
+  chart: false
+  math: false
+extends:
+  js:
+  css: ./style.css
+  webpack:
+build:
+  ssr: true
