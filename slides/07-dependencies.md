@@ -34,7 +34,6 @@ Let's talk about application dependencies!
 
 Libraries are written by people. And people make mistakes, or intentionally do bad things.
 
-As mentioned before, people are not always nice.
 In the link on the slide is a recent case when library was stealing personal data under the hood.
 Luckily it was shut down fast. The other important thing related to libraries is that they
 usually have new versions with patched vulnerabilities which we should use.
@@ -42,7 +41,7 @@ usually have new versions with patched vulnerabilities which we should use.
 And it is a responsibility of the developer to frequently check and update library versions and setup
 notifications about new versions.
 
-**NEXT**: There are automatic tools that make having notifications
+There is a lot of automatic tools that make having notifications
 about new secure versions easy to receieve.
 -->
 
@@ -73,14 +72,15 @@ about new secure versions easy to receieve.
 
 <!-- note
 
-Here we can see an example of the full report of `safety` package, it can not only
-show insecure versions but also short explanation. See that here we have a mention
-that some template filters in Django in some circustances can comsule a lot
-of application memory which can be used for denial of service attack. An intent of
-the Denial od service attack or more common known as DDoS is to temporary or permanently
-make application unavailable for users.
+Here we can see an example of the full report of python `safety` package, it can not only
+show insecure versions but also short explanation.
 
-This check can be setup to run each time you push changes to the repository, or better
-to run it periodically and send for example emails when new more secure version of the
-library is available.
+See that here mentioned that some numeric template filters in Django
+can comsule a lot of application memory which can be used for denial of service attack.
+An intent of the Denial od service attack or more common known as DDoS is
+to temporary or permanently make application unavailable for users.
+
+This dependency check can be setup to run each time you push changes to the repository,
+or even better, to run periodically and send for example emails when new
+more secure version of the library is available.
 -->

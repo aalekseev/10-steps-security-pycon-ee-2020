@@ -39,14 +39,14 @@ import access from '../assets/access.jpg'
 
 <!-- note
 
-Sometimes we check that user is authenticated (which means they have account in our system and logged in when
-doing some action), but never checking that user authorized (which means that they allowed to do specific thing
-in our system) to view or change the data.
+Sometimes we check that user is authenticated
+(which means they have account in our system and logged in when doing some action),
+but never checking that user authorized (which means that they allowed to do specific thing in our system).
 
 What is so dangerous with that you would ask? It starting to be interesting when regular user can do
 things that only admin users would ideally be allowed to do. It leads to data vandalism in the best case
-scenario - when other users data get changed by one malicious user, changing the main page content to
-contain offencive wording. It also can result in stealing personal data and many more dangers.
+scenario - when changing the main page content to contain offencive wording.
+It also can result in stealing personal data and many more dangers.
 
 Let's look at the code example
 -->

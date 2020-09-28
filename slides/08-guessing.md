@@ -36,12 +36,13 @@ import guessing from '../assets/secure-security.jpg'
 
 <!-- note
 
-- How hard it is to guess admin login page to make a brute-force attack
-    trying well-known vulnerable passwords?
-- How hard it is to guess the Django version of the application, to try to perform
-    a vulnerability that was not patched in that version?
+- Can you guess how many users in the system, given that you registered just now?
+- Can you guess the admin login page?
+- Can you guess the admin email?
 
-**NEXT**: Let's look on the next slide how we can improve situation a little bit,
+Well, sometimes not hard at all.
+
+Let's look on the next slide how we can improve situation a little bit,
 but keep in mind, this is not to stop the attack but rather
 to make exploring our application not a walk in the park.
 -->
@@ -57,13 +58,11 @@ to make exploring our application not a walk in the park.
 
 <!-- note
 
-Changing the admin URL can really make a long way and difference. Most automatic
-tools that scans for admin urls on sites have a predefined dictionary of keywords that they use,
-and if you are a harder target, the attacker might just skip you application.
-
-And remember all these cases when username and password in plain text was sent over email?
+Changing the admin URL can really make a long way and difference.
+Most automatic tools that scans for admin urls on sites have a predefined dictionary of keywords that they use,
+and if you are a harder target, by changing the admin url, the attacker might just skip you application.
 
 We talk a bit about configuration of the application, and I mentioned some tools that
-are available to automatically get reports about some of the vulnerabilities. Two next steps are about
-the tools.
+are available to automatically get reports about some of the vulnerabilities.
+Two next steps are about the tools.
 -->

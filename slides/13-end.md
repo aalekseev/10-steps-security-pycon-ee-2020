@@ -6,13 +6,13 @@ Make security checks a reccuring activity
 
 <!-- note
 
-NEEDS IMAGE?
+STEP ZERO
 
 As simple as that. Make security checks you regular activity.
 You can start slow with a small checklist and scheduled 1h each month.
 I believe that this is something that any client would happily agree to do.
 
-**NEXT**: I have a few more slides with if you want to learn more about security.
+I have a few more slides if you want to learn more about security.
 -->
 
 ---
@@ -35,7 +35,8 @@ I believe that this is something that any client would happily agree to do.
 
 First is some topics that were not captured by this talk.
 OWASP to 10 is a good starting point, and dealing with most common issues
-is important, but there is a lot more to the vulnerabilities.
+is important, but there is a lot more to the vulnerabilities and some of them are
+listed here.
 -->
 
 ---
@@ -72,10 +73,9 @@ on various conferences:
 Madis Petersoo & Karl Õkva for giving feedback
 
 <!-- note
-Last but not least - that you all for coming today and listening to this talk and here
+Last but not least - thank you all for coming today and listening to this talk and here
 is a list of people who inspired me to do the talk.
 
 Additional thank you for Madis Petersoo and Karl Okva for giving me feedback
 about the talk.
 -->
-

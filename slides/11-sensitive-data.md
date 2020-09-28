@@ -39,7 +39,8 @@ It is used to speed up access to large media files such as PDF documents. And wi
 be able to download lots of documents with most likely uprotected bank data or change the documents to swap bank account details
 in them to steal some real money.
 
-Protecting sensitive data is super important, so what should we do when we need to work with sensitive data?
+Protecting sensitive data is super important,
+so what should we do when we need to work with sensitive data?
 -->
 
 ---
@@ -62,8 +63,8 @@ class UserProfileSerializer(serializers.ModelSeriazlier):
         fields = ("profile_pic", "job_title")
 ```
 <!-- note
-This is a declaration of how database model will be coonverted
-to a Python datastructure which will be rendered as a JSON in an server API response.
+In this code example we see a declaration of how database model will be converted
+to a Python datastructure, which will be rendered as a JSON in an server API response.
 
 In the upper example you see a lazy code where you are not specifying database model fields,
 you just telling the frameowrk to expose everything from the DB.
@@ -89,6 +90,8 @@ However these basic things can help:
 - Disable caching for responses that contain sensitive data
 
 <!-- note
+How do we prevent data to be leaked?
+
 I would say that the firs point in the list about deciding what data will be exposed is most critical one
 in most of the cases. Because it is simple a question - do we really need to store this data? And it is most likely
 that it is a "nice to have" rather than strict requirement. And if it is strictly needed to save you home address for example,

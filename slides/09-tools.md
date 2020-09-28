@@ -17,7 +17,7 @@
 
 <!-- note
 I decided to split them into to because some of the tools can be hard to install
-and use on corporate PC, and there is tools that comes out of the box with Django.
+and use on some workspaces, and there is tools that comes out of the box with Django.
 -->
 
 ---
@@ -40,17 +40,16 @@ and use on corporate PC, and there is tools that comes out of the box with Djang
 For example Django comes with a lot of tools out of the box, you
 as a developer just need to be avare of them and use accordingly.
 
-Here are some examples that I found mentioned on the internet. To be honest,
-I did not knew about half of them, and only during research phase found out about them.
-And some of the utility functions are not metioned in the official documentation, but since 
-Django is opensource you can and should look into source code and see what useful
-helper functions Django can provide you.
+Here are some examples that I found mentioned on the internet.
+To be honest, I did not knew about half of them, and only during research phase found out about them.
+Some of the utility functions are not metioned in the official documentation, but since Django is opensource
+you can and should look into source code and see what useful helper functions Django can provide you.
 
-One of the interesting tools is constant time comapre. It is related to the side-channel attacks. This
-is a type of attack that is based on measuring how much time each computation (in this case comparing two strings)
-will take.
+One of the interesting tools is constant time comapre. It is related to the side-channel attacks.
+This is a type of attack that is based on measuring
+how much time each computation (in this case comparing two strings) will take.
 
-**NEXT**: Now when we looked into built-in tools, lets see what extra tools that might be harder to install
+Now when we looked into built-in tools, lets see what extra tools that might be harder to install
 in some workspaces but definately will make our lives easier.
 -->
 
@@ -73,6 +72,10 @@ in some workspaces but definately will make our lives easier.
     <li>?</li>
 </ol>
 
+<!-- note
+External tools are powerful and if you can - use them
+-->
+
 ---
 
 ## 7. Use automatic tools to check your application
@@ -88,6 +91,8 @@ in some workspaces but definately will make our lives easier.
 - [Mozilla Observatory](https://observatory.mozilla.org/)
 
 <!-- note
+
+I will mention a few tools and others you can research later
 
 1. **OWASP ZAP**
     - This is an attack proxy. It sits between browser and application, intercepts requests, analyzes it for vulnerabilities and puts a report

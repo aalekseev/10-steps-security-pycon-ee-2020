@@ -15,6 +15,10 @@
     <li>?</li>
 </ol>
 
+<!-- note
+User input. We will start with two extreamly famous vulnerabilities that share one context related to the user input
+-->
+
 ---
 
 <!-- sectionTitle: User Input -->
@@ -32,12 +36,12 @@
 User input can take many forms
 - A comment form under the blog post
 - A user profile image that user uploads themself
-- An XML file that user to upload some data
+- An XML file that user to upload with some data
 
-But what is common theme - is that not all users are nice, and they will not do what they "suppose"
-to do with your application.
+But what is common theme - is that not all users are nice,
+and they will not do what they "suppose" to do with your application.
 
-**NEXT**: So - 2 most common attacks Cross-site scripting and SQL injection
+So - 2 most common attacks Cross-site scripting and SQL injection
 -->
 
 ---
@@ -50,15 +54,16 @@ import xssTweetdeck from '../assets/xss-tweetdeck.jpg'
 
 <!-- note
 
-So the story goes that there is a popular at that time application Tweetdeck, that many people
-and celebrities used to manage multiple twitter accounts. And one day one smart person tried to
-post a tweet with javascript code inside. And it worked. After that if you saw that tweet and hit
+So the story goes that there is a popular application Tweetdeck, that many people
+and celebrities use to manage multiple twitter accounts.
+And one day one smart person tried to post a tweet with javascript code inside.
+And it worked. After that if you saw that tweet and hit
 like or retweet you would be greet with an alert - hey there is a XSS vulnerability in Tweetdeck.
 Luckily it was not a malicious user otherwise cosiquences would be far more dangerous.
 
 In the essence cross site scripting related to unsanitized user input on the client side of the
 application. Most of the time this attack is most powerful when the code that one user submitted
-application rendered is visible to other users.
+and it gets visible to other users.
 Typical XSS attacks include session stealing, account takeower, key logging.
 -->
 
@@ -79,12 +84,8 @@ Typical XSS attacks include session stealing, account takeower, key logging.
 
 Here are some of the things that you can do, to prevent the XSS attack in Django application.
 
-And a super cool in-depth article by Anthony Shaw about XSS in Django and btw he is an author of this
-Pycharm security plugin.
-
-SHOULD SKIP?
-May 2020, XSS in Log-in with facebook button
-https://wiraltech.com/xss-vulnerability-in-login-with-facebook-button-pays-usd20000-bounty/
+And in the bottom I linked a super cool in-depth article by Anthony Shaw about XSS in Django
+and btw he is an author of the Pycharm security plugin mentioned before.
 
 **NEXT**: So this was about a user input displayed on client side
 and now let's look at more dangerous server side unsanitized user input
@@ -103,16 +104,15 @@ and now let's look at more dangerous server side unsanitized user input
 
 <!-- note
 
-SQL injection. This is a number 1 in OWASP top 10, most popular and most dangerous attack.
+SQL injection.
+
+Even though this attack is known for almost **20** years This is a number 1 in OWASP top 10,
+most popular and most dangerous attack.
+
 The threat is that user with malicious intent can provide a harmful input to the server,
 and server will execute the code on the Database level.
-Any user can read/change sensible data in the database. And even though this attack is known for
-almost **20** years
 
-And a classical XKCD comics about it
-
-In this example we are looking into SQL injection, but it can be URL paramethers, request
-headers, cookies, JSON, XML data inputs.
+On the slide is a classical comics about it.
 
 **NEXT**: Ok, this is a scare and old attack vector, what can we do about it?
 -->
@@ -142,6 +142,20 @@ Customers.objects.raw(
 )
 ```
 
+<!-- note
+In the example code we see a dangerous user input, and how it can
+be passed to Django.
+
+In first case we format the string with user input and pass it to the database.
+Database will execute this code because it does not know that it needs to do anything.
+From the point of view of the database it is a perfectly valid string.
+
+On the better example, we passing the code to the database but also
+a user input as a separate parameter. That way Django and database layer know
+that this is something that may contain dangerous code and won't evaluate the code
+but rather escape the characters in the string.
+-->
+
 ---
 
 ## 8. Don't trust user input and sanitize it (SQLi prevention)
@@ -160,13 +174,12 @@ Customers.objects.raw(
 
 <!-- note
 
-Django ORM is your security blanket here, it will sanitize the user input for you.
-However if you provided it with SQL query with user input already there,
-there is not much Django can do about it.
+Best if you can use Django ORM, not only it makes code more readable,
+but it also protects you from this kind of things out of the box. No extra step needed.
 
-Using Django ORM might not be possible in some situations - for example
-legacy code with huge 200 lines SQL statement that nobody understands anymore
-and it was not updated for 5 years.
+And if using Django ORM is not possible in some situations - for example
+legacy code with huge 200 lines SQL statement that nobody understands anymore.
+
 In this case it is totally fine to pass user input as paramethers,
 that way it also will be sanitized and escaped by Django and the database.
 

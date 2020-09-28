@@ -19,7 +19,7 @@
 
 On this slide we see a 10 steps checklist that we will be revisiting in the end.
 We can see only first item right now, but other items will be revealed as we go,
-and a link to the repository with complete steps will be available in the last slides.
+and a link to the repository with complete steps will be available at the last slide.
 We will start with easy to fix things and will go down the topics where automation tools
 won't help you that much and you will be feeling scared and alone.
 
@@ -39,9 +39,9 @@ import mitm from '../assets/mitm.png'
 
 <!-- note
 
-Well, what is overlooked, is that even if the site itself is served over HTTPS connection,
-if parts of it still using insecure HTTP connection to load images, javascript files or stylesheets
-you can say that it is not using secure connection.
+But what is overlooked, is that even if the site itself is served over secure connection,
+if parts of it still using insecure HTTP connection to load images,
+javascript files or stylesheets you can say that it is not using secure connection.
 
 The resource that is requested via insecure connection can be modified and replaced by
 malicious user listening to the traffic in the for example free public WiFi.

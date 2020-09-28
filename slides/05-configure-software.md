@@ -40,27 +40,22 @@ But first, you can see two links to the OWASP top 10. What is it?
 https://owasp.org/www-project-top-ten/
 
 OWASP - short for Open Web Application Security Project.
-OWASP is a nonprofit foundation that works to improve the security of software.
-
-Every year they publish 10 most common security vulnerabilities in Web Applications. And in this year
-2020 we have 2 vulnerabilities that, at least in my mind, connected to each other.
+It is a nonprofit foundation that research and publish 10 most common security vulnerabilities in Web Applications.
+And in this year 2020 we have 2 vulnerabilities that, at least in my mind, connected to each other.
 One is misconfiguration and another is insufficient monitoring which basically means that
 your system was not configured to alert you about suspicious activities - in other words you won't know
 when you were hacked.
 
 So, talking about misconfiguration - on the screenshot you see a Django debug page, it
-intended for local development and shows lots of information, that would be pretty bad to show attackers:
+intended for local development and shows lots of information:
 - Python version
 - Django version
-- Path on the server to the application
-- Sensitive information from the exception itself like user ID and order ID
-- All of the application settings
-- Context information with variable values for the part of the code where exception happaned
+- Path to the application on your server
+- Sensitive information from the exception itself
 
-This is intended for the local environment, and very helpful for developer. But let's Imagine
-that this configuration was deployed. Lots of information to break into your application.
+This is intended for the local environment, and super helpful for developer. 
 
-**NEXT**: I hope that it is clear, that with this information the attacket at least can Open
+I hope that it is clear, that with this information the attacket at least can Open
 django releases page, and look for a simple vulnerabilities that can be performed on Django
 sites with verison lower than listed here. How do we fix that?
 -->
@@ -94,6 +89,6 @@ With the command `python manage.py check --deploy` Django will run a set of
 security checks and report you with things that you need to pay attention to.
 
 But configuring software and servers is a much broader topic, which cannot fit
-into this presentation. The only advice here is to read carefult sonftware confguration
+into this presentation. The only advice here is to read carefuly sonftware confguration
 manuals and regularly checking that indeed conftware is configured properly.
 -->

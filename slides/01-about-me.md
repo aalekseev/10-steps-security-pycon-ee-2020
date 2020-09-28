@@ -21,13 +21,15 @@ import author from '../assets/me.jpg'
 
 Hello!
 
-I am a full-stack developer at Thorgate - a digital agency
-focused on helping industry companies automate internal processes.
+My name is Anton, I am a full-stack developer at Thorgate - a digital agency
+focused on industry projects, as you know we value python community and organize
+code club and pycon, open-sourcing some of the libraries.
 
-I am a regular software developer who decided to invest time and learning
-about security of web applications.
+I am not a security expert, just a regular software developer
+who decided to invest time into learning about security.
 
-If you like what you see, come talk to me - we are always happy to on-board motivated professionals
+If you like this talk and want to work with me,
+we are always happy to on-board motivated professionals
 
 NEXT: How many data breaches that happaned this year did you heard about?
 -->
