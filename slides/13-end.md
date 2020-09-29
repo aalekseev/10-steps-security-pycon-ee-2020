@@ -70,7 +70,7 @@ on various conferences:
 - Philip James
 - Red and Black Tech
 
-Madis Petersoo & Karl Õkva for giving feedback
+<footer>Madis Petersoo & Karl Õkva for giving feedback</footer>
 
 <!-- note
 Last but not least - thank you all for coming today and listening to this talk and here

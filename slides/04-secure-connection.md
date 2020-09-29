@@ -46,12 +46,13 @@ javascript files or stylesheets you can say that it is not using secure connecti
 The resource that is requested via insecure connection can be modified and replaced by
 malicious user listening to the traffic in the for example free public WiFi.
 This is called a man in the middle attack, and you can see it in the picture.
+
 In this picture attacker is spoofing the secure sertificate and imagine that with
-HTTP connection they don't even have to do it.
+insecure connection they don't even have to spoof any certificates.
 
 - https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox
 
-NEXT: If we have already a valid SSL certificate, what else
+NEXT: If we have already a valid TSL certificate, what else
 we need to check to ensure that our application truly using secure connection?
 -->
 
@@ -59,14 +60,19 @@ we need to check to ensure that our application truly using secure connection?
 
 ## 1. Use secure connection for everything (fix)
 
-1. Ensure that SSL sertificates are not expired (have a notification when it is)
+1. Ensure that SSL certificates are not expired (have a notification when it is)
 1. Ensure that on load-balancer or proxy serving all requests via secure connection.
     Also check out `SECURE_SSL_REDIRECT` Django setting
-1. Ensure that every image, javascript and stylesheet are server under secure connection as well
+1. Ensure that every image, javascript and stylesheet are served under secure connection as well
 1. Ensure that if your application communicate with third-party API it uses a secure connection
 1. If your application needs to transfer files via FTP, prefer using SFTP
 
 <!-- note
+
+1. We need to Ensure that certificates are not expired (have a notification when it is)
+1. Check framework settings related to the secure connection and how it can help you
+1. Check that every image, javascript and stylesheet are served under secure connection
+
 You can see that there is also mentions of FTP and third-party API connections. And it is here for a reason
 - Even if your application security level is pretty good, if part of the system works with less
 secure components - it is a weak spot that can be used as an attack vector.

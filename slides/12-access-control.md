@@ -105,6 +105,9 @@ make the system less broken with access control.
 
 <!-- note
 
+In short - use user roles, check allowed actions and test with different users, not only
+superuser.
+
 Ok, so we covered all 10 steps - woho! congratulations!
 However there is one thing that is super important and kinda missing - because
 without it, all other steps simply won't work.

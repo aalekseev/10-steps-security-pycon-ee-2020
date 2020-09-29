@@ -15,9 +15,10 @@
 <!-- note
 
 Well, there were a lot. On this slide you can see the major one of 2020, but a lot more
-can be found from the link on the slide. The most recent one with 235 M user account exposed online
-is terrifying. And you see, social media leaks data, banks leaks data, airports leaks data,
-your local gym leaks data. Everyone do it.
+can be found from the link on the slide.
+The most recent one with 235 M user account exposed online
+is terrifying. And you see, social media leaks data,
+banks leaks data, airports leaks data, your local gym leaks data. Everyone do it.
 
 I feel that security is a topic that needs to be reminded every now and then,
 that's why I am here today to talk about security.
