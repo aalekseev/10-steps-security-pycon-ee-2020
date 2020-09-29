@@ -1,6 +1,6 @@
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li>Use secure connection</li>
@@ -31,7 +31,7 @@ import djangoErrorPage from '../assets/django-error-page.jpg'
 - [№6 in OWASP Top 10 - Security Misconfiguration](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)
 - [№10 in OWASP Top 10 - Insufficien Logging and Monitoring](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring)
 
-<img src={djangoErrorPage} className="slide-bottom content-center" />
+<img src={djangoErrorPage} className="slide-bottom content-center" style={{width: "130%", height: "130%"}} />
 
 <!-- note
 

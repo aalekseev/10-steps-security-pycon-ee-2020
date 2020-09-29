@@ -2,4 +2,4 @@
 
 ## 10 Steps For *More Secure* Web Applications
 
-Anton Alekseev for Pycon Estonia 2020
+Anton Alekseev for Python Code Club 2020

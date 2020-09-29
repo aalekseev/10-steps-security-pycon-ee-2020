@@ -1,9 +1,9 @@
 <!-- sectionTitle: Misconceptions -->
 import unicorn from '../assets/unicorn.png'
 
-## What is Security?
+## Misconceptions about Security
 
-SECURITY DOES NOT EXIST
+### Secure Web Application
 
 <img className="content-center slide-bottom" src={unicorn} />
 
@@ -13,7 +13,7 @@ Image from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_med
 
 <!-- note
 
-Right from the start let's be transparent about it - there is no such thing as security.
+Right from the start let's be transparent about it - there is no such thing as secure system.
 No system is 100% secure, and everything is mostly broken.
 
 NEXT: With this out of the way, there are a few more topics that I would like to
@@ -24,7 +24,9 @@ cool vulnerabilities.
 
 ---
 
-## It is a job for _**only**_ security professionals
+## Misconceptions about Security
+
+### It is a job for _**only**_ security professionals
 
 - **Staff, Sales, Marketing** - use strong passwords, know about phishing
 - **Developers** - know about vulnerabilities and follow security practices
@@ -46,33 +48,35 @@ An opposite, security is a shared responsibility. It is everyone job. And here i
 
 ---
 
-## Security is too complex to learn about
+## Misconceptions about Security
+
+### Security is **_too complex_** to learn about
 
 <!-- note
 
 Second misconception - Security is too complex to learn about
 
-Well it is hard to learn about, especially cryptography, this stuff is tough.
-But at the same time, it is fun and the stories about braking the system is most of the time
-reads like a good detective story or a comedy where main character stores passwords on a sticky note 
-on the workdesk.
-
-But jokes aside, there are basic steps, if followed, that will make
+Well it is hard to learn about, especially cryptography, this stuff is hard.
+But at the same time, there are basic steps, if followed, that will make
 your web application better protected than vast majority of sites.
-Amature hackers looking for an easy target,
-and professional hacker will brake your site anyway
-if you don't have a dedicated security department.
+
+Amature hackers looking for an easy target, and if you put some
+effort and thought about security you already doing better than the rest of the
+applications out there.
 -->
 
 ---
+## Misconceptions about Security
 
-##  My framework will protect me from all security threats
+### My **_framework will protect me_** from all security threats
 
 <!-- note
 
 Third misconception - My framework will protect me from all security threats
 
-Yes, from some of them. Your framework will protect you on the start, but as application logic grows,
+Django has a reputation of a very secure framework, this is what we are proud of.
+
+Yes, your framework will protect you on the start, but as application logic grows,
 developers will itroduce more vulnerabilities in code and there will be less and less
 help from the framework itself.
 

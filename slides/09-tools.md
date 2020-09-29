@@ -1,6 +1,6 @@
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li>Use secure connection</li>
@@ -57,7 +57,7 @@ in some workspaces but definately will make our lives easier.
 
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li>Use secure connection</li>
@@ -98,8 +98,9 @@ I will mention a few tools and others you can research later
     - This is an attack proxy. It sits between browser and application, intercepts requests, analyzes it for vulnerabilities and puts a report
         with links to OWASP documentation
 1. **Pycharm python security plugin**
-    - The plugin looks at your Python code for common security vulnerabilities and suggests fixes. This is all-purpose plugin, not only for web-developers
-    - It can automatically check with some extent for SQL injection, XSS and misconfiguration
+    - The plugin looks at your Python code for common security vulnerabilities and suggests fixes.
+    This is an all-purpose plugin, not only for web-developers
+    And it can automatically check with some extent for SQL injection, XSS and misconfiguration
 1. **Pipenv check**
     - If you are using Pipenv to lock project dependencies, it provides a command to check your dependencies graph and check for vulnerabilities in package versions
 1. **Bandit**

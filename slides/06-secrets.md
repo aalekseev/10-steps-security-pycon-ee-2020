@@ -1,6 +1,6 @@
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li>Use secure connection</li>
@@ -28,7 +28,7 @@ import commitingSecrets from '../assets/commiting-secrets.jpg'
 
 ## 3. Don't commit secrets to the repository
 
-#### 2 600 000 results on GitHub containing "SECRET_KEY" word
+#### **2 600 000** results on GitHub containing "SECRET_KEY" word
 
 <img src={commitingSecrets} className="slide-bottom content-center" />
 
@@ -41,6 +41,8 @@ in plain text to the remote repository in GitHub, GitLab or Bitbacket?
 Once something enters the internet, it is really hard to remove it.
 It is a bit scary, I searched in github word "secret key" and
 it shows 2.5M results for only python code and for only "SECRET_KEY" keyword.
+Some of the results contains protected variable, but the big amount have
+the secret key commited in a plain text.
 
 In this case we are looking at commited secret keys to Django
 application. With this string of characters Django creates password reset tokens,

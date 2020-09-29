@@ -1,6 +1,6 @@
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li>Use secure connection</li>
@@ -40,7 +40,7 @@ import guessing from '../assets/secure-security.jpg'
 - Can you guess the admin login page?
 - Can you guess the admin email?
 
-Well, sometimes not hard at all.
+Well, sometimes guessing is not hard at all.
 
 Let's look on the next slide how we can improve situation a little bit,
 but keep in mind, this is not to stop the attack but rather

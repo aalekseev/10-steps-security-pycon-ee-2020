@@ -1,6 +1,6 @@
 <!-- classes: ten-steps -->
 
-## 10 Steps
+## 10 steps for more<br />secure applications
 
 <ol>
     <li className="active">Use secure connection</li>

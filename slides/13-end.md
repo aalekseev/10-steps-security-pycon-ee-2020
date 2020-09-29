@@ -60,8 +60,7 @@ Some reading material -> OWASP documentation, Django security docs
 
 ## Thank you!
 
-People who made this talk possible by actively talking about security
-on various conferences:
+### People who inspired me to do this talk:
 
 - Anthony Shaw
 - Jacinda Shelly
