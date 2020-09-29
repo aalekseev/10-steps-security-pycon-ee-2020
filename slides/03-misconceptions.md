@@ -13,13 +13,15 @@ Image from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_med
 
 <!-- note
 
-Right from the start let's be transparent about it - there is no such thing as secure system.
+Right from the start let's be transparent about it - there is no such thing as secure application.
 No system is 100% secure, and everything is mostly broken.
 
 NEXT: With this out of the way, there are a few more topics that I would like to
-clear out. In my opinion security problems so often related to people rather than code
-that talking about security mindset is as important as stories about
-cool vulnerabilities.
+clear out.
+
+In my opinion security problems often related to people rather than code
+and because of that talking about security mindset is as important
+as stories about cool vulnerabilities.
 -->
 
 ---
@@ -30,8 +32,8 @@ cool vulnerabilities.
 
 - **Staff, Sales, Marketing** - use strong passwords, know about phishing
 - **Developers** - know about vulnerabilities and follow security practices
-- **Engeneering Managers** - schedule secure audits
-- **Project Managers** - work with client to avoid changes that will introduce security risks
+- **Engineering Managers** - schedule secure audits
+- **Project Managers** - work with the client to avoid changes that will introduce security risks
 
 <!-- note
 
@@ -42,7 +44,7 @@ An opposite, security is a shared responsibility. It is everyone job. And here i
 
 - Staff, Sales, Marketing - use strong passwords, know about phishing
 - Developers - know about vulnerabilities and follow security practices
-- Engeneering Managers - schedule secure audits
+- Engineering Managers - schedule secure audits
 - Project Managers - work with client to avoid changes that will introduce security risks
 -->
 
@@ -69,6 +71,8 @@ applications out there.
 ## Misconceptions about Security
 
 ### My **_framework will protect me_** from all security threats
+
+Django has a reputation of a very secure framework
 
 <!-- note
 

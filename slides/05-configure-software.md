@@ -48,10 +48,7 @@ when you were hacked.
 
 So, talking about misconfiguration - on the screenshot you see a Django debug page, it
 intended for local development and shows lots of information:
-- Python version
-- Django version
-- Path to the application on your server
-- Sensitive information from the exception itself
+- Python version, Django version, Path to the application on your server
 
 This is intended for the local environment, and super helpful for developer. 
 

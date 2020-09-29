@@ -52,7 +52,7 @@ insecure connection they don't even have to spoof any certificates.
 
 - https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox
 
-NEXT: If we have already a valid TSL certificate, what else
+NEXT: If we have already a valid TLS certificate, what else
 we need to check to ensure that our application truly using secure connection?
 -->
 
@@ -61,7 +61,7 @@ we need to check to ensure that our application truly using secure connection?
 ## 1. Use secure connection for everything (fix)
 
 1. Ensure that SSL certificates are not expired (have a notification when it is)
-1. Ensure that on load-balancer or proxy serving all requests via secure connection.
+1. Ensure that on load-balancer or proxy serving all requests via a secure connection.
     Also check out `SECURE_SSL_REDIRECT` Django setting
 1. Ensure that every image, javascript and stylesheet are served under secure connection as well
 1. Ensure that if your application communicate with third-party API it uses a secure connection

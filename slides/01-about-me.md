@@ -23,17 +23,15 @@ import author from '../assets/me.jpg'
 
 Hello!
 
-My name is Anton, I am a full-stack developer at Thorgate - a digital agency
-focused on industry projects, as you know we value python community and organize
-code club and pycon, open-sourcing some of the libraries. We build our projects
-with a web framework that is build with python - called Django, and in this talk
-most of the examples and tools are related to it.
+My name is Anton, I am a full-stack developer at Thorgate. We build our projects
+with a Django web framework - it is build with python, and in this talk
+most of the examples and tools are related to this framework.
 
-I am not a security expert, just a regular software developer
+A small disclamer - I am not a security expert, just a regular software developer
 who decided to invest time into learning about security.
-
-If you want to discuss more about security you can contact me in Discord
-or Twitter after the talk.
+And if you want to discuss more about security, or just let me know
+that this talk helped you to understand more about security you can contact me in Discord
+or Twitter, or Facebook event page after the talk.
 
 NEXT: How many data breaches that happaned this year do you know about?
 -->

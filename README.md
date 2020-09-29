@@ -12,4 +12,4 @@
 7. Use automatic tools to check your application
 8. Don't trust user input and sanitize it
 9. Protect user data by requesting only what necessary
-10. Disallow everything, and granually add permissions as they are required
+10. Disallow everything, and gradually add permissions as they are required
